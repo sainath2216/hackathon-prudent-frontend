@@ -1,0 +1,43 @@
+/* Contact Page Container */
+.contact-container {
+    background-color: #f9f9f9;  /* Light background color for contrast */
+    padding: 50px 20px;  /* Add padding to the container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  /* Full viewport height */
+    text-align: center;
+  }
+  
+  /* Heading Style */
+  .contact-container h1 {
+    font-size: 36px;
+    color: #333;  /* Dark color for heading */
+    font-weight: 700;  /* Bold heading */
+    margin-bottom: 20px;  /* Space below the heading */
+  }
+  
+  /* Paragraph Style */
+  .contact-container p {
+    font-size: 18px;
+    color: #555;  /* Lighter color for text */
+    margin: 10px 0;  /* Space between paragraphs */
+    line-height: 1.6;  /* Add line height for readability */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-container {
+      padding: 30px 10px;  /* Adjust padding for smaller screens */
+    }
+  
+    .contact-container h1 {
+      font-size: 28px;  /* Smaller heading on mobile */
+    }
+  
+    .contact-container p {
+      font-size: 16px;  /* Smaller text for paragraphs */
+    }
+  }
+  

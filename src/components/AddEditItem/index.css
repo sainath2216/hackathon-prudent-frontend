@@ -1,0 +1,110 @@
+/* General container styling */
+.add-edit-item {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.add-edit-item h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Form styling */
+.add-edit-item form div {
+  margin-bottom: 15px;
+}
+
+.add-edit-item label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.add-edit-item input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.add-edit-item input:focus {
+  border-color: #4caf50;
+  outline: none;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+/* Styling the buttons */
+.add-edit-item .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-edit-item button {
+  padding: 10px 15px;
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.add-edit-item button:hover {
+  background: #45a049;
+}
+
+.add-edit-item .back-button {
+  background: #f44336;
+}
+
+.add-edit-item .back-button:hover {
+  background: #e53935;
+}
+
+/* React-select styles */
+.select .react-select__control {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: none;
+  min-height: 40px;
+  cursor: pointer;
+}
+
+.select .react-select__control:hover {
+  border-color: #4caf50;
+}
+
+.select .react-select__value-container {
+  padding: 5px 10px;
+}
+
+.select .react-select__menu {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  z-index: 10;
+}
+
+.select .react-select__option {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.select .react-select__option--is-focused {
+  background-color: #e8f5e9;
+  color: #333;
+}
+
+.select .react-select__option--is-selected {
+  background-color: #4caf50;
+  color: #fff;
+}

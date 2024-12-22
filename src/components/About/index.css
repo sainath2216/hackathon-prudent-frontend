@@ -1,0 +1,44 @@
+/* About Page Container */
+.about-container {
+    background-color: #f4f4f4;  /* Light background for better readability */
+    padding: 50px 20px;  /* Add padding to the container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  /* Full view height */
+    text-align: center;
+  }
+  
+  /* Heading Style */
+  .about-container h1 {
+    font-size: 36px;
+    color: #333;  /* Dark text for the heading */
+    font-weight: 700;  /* Bold heading */
+    margin-bottom: 20px;  /* Space below the heading */
+  }
+  
+  /* Paragraph Style */
+  .about-container p {
+    font-size: 18px;
+    color: #555;  /* Lighter text for paragraph */
+    max-width: 800px;  /* Limit max width of the text */
+    line-height: 1.6;  /* Increase line height for readability */
+    margin: 0 auto;  /* Center align the paragraph */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about-container {
+      padding: 30px 10px;  /* Adjust padding for smaller screens */
+    }
+  
+    .about-container h1 {
+      font-size: 28px;  /* Smaller heading size on mobile */
+    }
+  
+    .about-container p {
+      font-size: 16px;  /* Smaller paragraph text on mobile */
+    }
+  }
+  

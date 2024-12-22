@@ -1,0 +1,138 @@
+/* General container styles */
+.home-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Main heading styles */
+  .main-heading h1 {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .main-heading .description {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  /* Search bar styles */
+  .search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-input {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-input:focus {
+    outline: none;
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Item list styles */
+  .item-list-container {
+    margin-top: 20px;
+  }
+  
+  .item-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .item-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .item-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Link styles - Remove underline */
+  .item-item a {
+    text-decoration: none; 
+    color: inherit; 
+  }
+  
+  .item-item a:hover {
+    color: #0056b3; 
+    text-decoration: none;
+  }
+  
+  .item-item .title {
+    font-size: 1.3rem;
+    color: #007BFF;
+    margin-bottom: 5px;
+  }
+  
+  .item-item p {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  /* Not found message */
+  .not-found p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #999;
+  }
+  
+  /* Pagination controls */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    padding: 10px 15px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+  }
+  
+  .pagination button:hover {
+    background-color: #007BFF;
+    color: white;
+    border-color: #007BFF;
+  }
+  
+  .pagination button:disabled {
+    background-color: #e9ecef;
+    color: #999;
+    cursor: not-allowed;
+  }
+  
+  .pagination button.active {
+    background-color: #007BFF;
+    color: white;
+    border-color: #007BFF;
+  }
+  

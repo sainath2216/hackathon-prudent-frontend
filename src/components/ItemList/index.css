@@ -1,0 +1,118 @@
+/* Container for the entire item list */
+.item-list {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Button container for title and back button */
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .button-container h2 {
+    font-size: 2rem;
+    color: #333;
+    margin: 0;
+    text-align: center; /* Center the title */
+    flex-grow: 1; /* Make sure title stays in center */
+  }
+  
+  .button-container .back-btn {
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1rem;
+    text-decoration: none; /* Ensures no underline appears on the link */
+    transition: background-color 0.2s ease;
+  }
+  
+  .button-container .back-btn:hover {
+    background-color: red; /* Darker shade on hover */
+  }
+  .link-btn{
+    color: #f9f9f9;
+    text-decoration: none;
+  }
+  /* Item list */
+  .item-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .item-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Link style for item name */
+  .item-item a {
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 1.2rem;
+  }
+  
+  .item-item a:hover {
+    color: #0056b3;
+  }
+  
+  /* Item actions - Edit & Delete buttons */
+  .item-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .item-actions button {
+    padding: 6px 12px;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .item-actions button:hover {
+    opacity: 0.9;
+  }
+  
+  /* Edit button styles */
+  .item-actions button:first-child {
+    background-color: #28a745;
+  }
+  
+  .item-actions button:first-child:hover {
+    background-color: #218838;
+  }
+  
+  /* Delete button styles */
+  .item-actions button:last-child {
+    background-color: #dc3545;
+  }
+  
+  .item-actions button:last-child:hover {
+    background-color: #c82333;
+  }
+  
+  /* Message when no items are available */
+  .item-list p {
+    font-size: 1.2rem;
+    color: #555;
+    text-align: center;
+  }
+  
