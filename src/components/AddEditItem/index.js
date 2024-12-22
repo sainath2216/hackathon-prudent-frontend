@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Creatable from "react-select/creatable"; // Correct import for Creatable
+import Select from "react-select"; // Importing react-select
 import { useParams, useNavigate } from "react-router-dom";
 import "./index.css";
 
@@ -70,38 +70,6 @@ const AddEditItem = () => {
       ...prevItem,
       itemType: selectedOption, // Set itemType as the selected object
     }));
-  };
-
-  const handleCreateItemType = (inputValue) => {
-    // Create a new option if it's not already in the list
-    const newOption = {
-      value: inputValue.toLowerCase().replace(/\s+/g, "-"), // Generate a unique value
-      label: inputValue, // Use the input as the label
-    };
-
-    // Optionally, send this new option to the backend to save it
-    fetch("http://localhost:3000/item-types", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        typeDescription: inputValue,
-      }),
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        console.log("New item type created:", data);
-        setItemTypes((prevTypes) => [...prevTypes, newOption]);
-        setItem((prevItem) => ({
-          ...prevItem,
-          itemType: newOption,
-        }));
-      })
-      .catch((error) => {
-        console.error("Error creating item type:", error);
-        alert("Error creating item type.");
-      });
   };
 
   const handleSubmit = (e) => {
@@ -187,13 +155,12 @@ const AddEditItem = () => {
         </div>
         <div>
           <label>Item Type:</label>
-          <Creatable
+          <Select
             options={itemTypes}
             value={item.itemType} // Ensure the value is set here
-            placeholder="Select or create an item type..."
+            placeholder="Select an item type..."
             isSearchable={true}
             onChange={handleItemTypeChange} // Handle item type change
-            onCreateOption={handleCreateItemType} // Handle creation of a new option
             className="select"
           />
         </div>
